@@ -17,6 +17,8 @@
     <header>
         <h1>يوم التأسيس السعودي</h1>
         <h5>مشاركة الطالبة : ذكرى عبدالرحمن الشمراني </h5>
+                <h5>الصف  : الاول متوسط </h5>
+
 
     </header>
 
@@ -56,10 +58,18 @@
 
 
         </section>
+        <section id="user-message" style="margin-bottom: 20px;">
+            <h2>شاركنا كلامك عن يوم التأسيس السعودي </h2>
+            <form id="message-form">
+                <label for="user-text">عبر هنا</label>
+                <textarea id="user-text" name="user-text" rows="4" style="width: 100%;"></textarea>
+                <button type="button" onclick="submitMessage()">إرسال</button>
+            </form>
+        </section>
         <section id="video" style="text-align: center;">
             <h2>فيديو يوم التأسيس</h2>
             <video width="100%" controls>
-                <source src="ÙÙÙØªØ§Ø¬ Ø¹Ù ÙÙÙ Ø§ÙØªØ£Ø³ÙØ³ Ø§ÙØ³Ø¹ÙØ¯Ù Ø¨Ø¯ÙÙ Ø­ÙÙÙ.mp4" type="video/mp4">
+                <source src="فيديو.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <!-- قم بتغيير "your-video-file.mp4" برابط ملف الفيديو الخاص بك -->
@@ -74,6 +84,20 @@
     </footer>
 
     <script>
+        const fs = require('fs');
+
+        function submitMessage() {
+            var userText = document.getElementById("user-text").value;
+        
+            // تحديد اسم الملف النصي ومساره
+            const logFilePath = 'user-messages.txt';
+        
+            // تسجيل الرسالة في الملف النصي
+            fs.appendFileSync(logFilePath, userText + '\n');
+        
+            console.log("رسالة المستخدم: " + userText);
+        }
+        
         function fun1() {
             var aboutContent = document.getElementById("1");
             aboutContent.style.display = (aboutContent.style.display === "none") ? "block" : "none";
