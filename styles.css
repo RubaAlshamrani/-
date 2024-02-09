@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('image1.png');
+    /* اسم الصورة التي قمت بتحميلها */
+    background-size: cover;
+    text-align: right;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.7);
+    /* تضليل خلفية الهيدر لتظهر النص بوضوح */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    /* تضليل خلفية المحتوى */
+}
+
+/* ... (الكود السابق) ... */
+
+#goals {
+    margin-top: 20px;
+}
+
+.goal {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    /* إضافة حدود للصور لتحسين المظهر */
+    border-radius: 5px;
+    /* إضافة زوايا مستديرة للصور */
+}
+
+.goal-description {
+    display: none;
+    color: #333;
+}
+
+/* ... (الكود السابق) ... */
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about {
+    padding: 15px;
+}
+
+#about-toggle {
+    cursor: pointer;
+    color: #333;
+    text-decoration: underline;
+}
+
+#about-content {
+    display: none;
+}

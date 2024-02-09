@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يوم التأسيس السعودي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <audio autoplay>
+        <source src="مونتاج عن يوم التأسيس السعودي بدون حقوق.mp3" type="audio/mp3">
+        <!-- يمكنك استبدال "your-audio-file.mp3" برابط ملف الصوت الخاص بك -->
+        Your browser does not support the audio element.
+    </audio>
+    <header>
+        <h1>يوم التأسيس السعودي</h1>
+        <h5>مشاركة الطالبة : ذكرى عبدالرحمن الشمراني </h5>
+
+    </header>
+
+    <main>
+        <p style="color: aliceblue;">اضغط على السؤال لاستعراض الاجابة</p>
+        <section id="about">
+            <h3 id="about-toggle" onclick="fun1()">ما هو يوم التأسيس؟</h3>
+
+            <p id="1">
+                يوم التأسيس
+                صدر الأمر الملكي الكريم من خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز آل سعود بأن يكون يوم 22 فبراير
+                يوماً للتأسيس وهو اليوم الذي يرمز إلى العمق التاريخي والحضاري والثقافي للمملكة العربية السعودية عندما
+                أسس الإمام محمد بن سعود الدولة السعودية الأولى عام 1139هـ / 1727م.</p>
+        </section>
+
+
+
+        <section id="about">
+            <h3 id="about-toggle" onclick="fun3()"> الى ماذا يرمز شعار يوم التأسيس؟</h3>
+
+            <p id="3">
+                <img style="max-width: 100%; height: auto; margin-bottom: 10px; width:300px" src="image2.jpeg" alt="">
+            </p>
+        </section>
+
+        <section id="about">
+            <h3 id="about-toggle" onclick="fun2()">ما هي اهداف يوم التأسيس؟</h3>
+
+
+            <ul id="2" style="list-style-type: circle; padding-left: 20px;">
+                <li> ١- الاعتزاز بالجذور الراسخة للدولة السعودية </li>
+                <li> ٢- الاعتزاز بالارتباط الوثيق بين المواطنين وقادتهم</li>
+                <li>٣- الاعتزاز بما أرسته الدولة السعودية من الوحدة والاستقرار والأمن</li>
+                <li>٤- الاعتزاز بصمود الدولة السعودية الأولى والدفاع عنها أمام الأعداء</li>
+                <li> ٥- الاعتزاز باستمرار الدولة السع​ودية واستعادتها لقوة جذورها وقادتها</li>
+            </ul>
+
+
+        </section>
+        <section id="video" style="text-align: center;">
+            <h2>فيديو يوم التأسيس</h2>
+            <video width="100%" controls>
+                <source src="ÙÙÙØªØ§Ø¬ Ø¹Ù ÙÙÙ Ø§ÙØªØ£Ø³ÙØ³ Ø§ÙØ³Ø¹ÙØ¯Ù Ø¨Ø¯ÙÙ Ø­ÙÙÙ.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- قم بتغيير "your-video-file.mp4" برابط ملف الفيديو الخاص بك -->
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 يوم التأسيس السعودي</p>
+    </footer>
+
+    <script>
+        function fun1() {
+            var aboutContent = document.getElementById("1");
+            aboutContent.style.display = (aboutContent.style.display === "none") ? "block" : "none";
+        }
+        function fun2() {
+            var aboutContent = document.getElementById("2");
+            aboutContent.style.display = (aboutContent.style.display === "none") ? "block" : "none";
+        }
+        function fun3() {
+            var aboutContent = document.getElementById("3");
+            aboutContent.style.display = (aboutContent.style.display === "none") ? "block" : "none";
+        }
+    </script>
+
+</body>
+
+</html>
